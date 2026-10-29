@@ -2,7 +2,6 @@ import { Outlet, createFileRoute, useParams } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { useHostedAuthRouteGuard } from "@/client/features/auth/useHostedAuthRouteGuard";
 import { prefetchBillingAccount } from "@/client/features/billing/billingAccountQuery";
-import { FreePlanBanner } from "@/client/features/billing/FreePlanBanner";
 import { TermsUpdateBanner } from "@/client/features/auth/TermsUpdateBanner";
 import { SkeletonPage } from "@/client/components/SkeletonPresets";
 import { PageLoading } from "@/client/components/Spinner";
@@ -44,10 +43,7 @@ function AppRouteLayout() {
       ready={ready}
       banner={
         ready && authGate.isHostedMode ? (
-          <>
-            <TermsUpdateBanner />
-            {projectId ? <FreePlanBanner /> : null}
-          </>
+          <TermsUpdateBanner />
         ) : undefined
       }
     >
