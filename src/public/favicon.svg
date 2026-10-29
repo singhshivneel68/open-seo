@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="256" height="256" role="img" aria-label="Serpwisp">
+<title>Serpwisp</title>
+<style>
+.p{animation:l 6s infinite ease-in-out}
+.e{transform-box:fill-box;transform-origin:center;animation:b 6s infinite}
+@keyframes l{0%,25%{transform:translate(1.8px,-1.8px)}35%,55%{transform:translate(-2.2px,.4px)}65%,80%{transform:translate(.4px,2.2px)}90%,100%{transform:translate(1.8px,-1.8px)}}
+@keyframes b{0%,44%,48%,100%{transform:scaleY(1)}46%{transform:scaleY(.1)}}
+@media(prefers-reduced-motion:reduce){.p,.e{animation:none}.p{transform:translate(1.8px,-1.8px)}}
+</style>
+<path d="M12 54V30C12 17 21 8 32 8s20 9 20 22v24l-7-6-6.500 6L32 48l-6.500 6L19 48z" fill="#0F766E"/>
+<g class="e">
+<circle cx="25" cy="29" r="5.500" fill="#fff"/>
+<circle cx="40" cy="29" r="5.500" fill="#fff"/>
+<g class="p" fill="#0F172A">
+<circle cx="25" cy="29" r="2.600"/>
+<circle cx="40" cy="29" r="2.600"/>
+</g>
+</g>
+</svg>

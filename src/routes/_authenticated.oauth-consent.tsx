@@ -117,8 +117,8 @@ function OAuthConsentPage() {
     <Card className="w-full max-w-md">
       <CardHeader className="flex flex-col items-center text-center">
         <img
-          src="/transparent-logo.png"
-          alt="OpenSEO"
+          src="/serpwisp-logo.svg"
+          alt="SerpWisp"
           className="size-10 rounded-lg"
         />
         <CardTitle className="mt-5 text-xl">

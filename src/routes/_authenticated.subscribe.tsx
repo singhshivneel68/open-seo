@@ -201,8 +201,8 @@ function SubscribePage() {
 
       <div className="space-y-3 text-center">
         <img
-          src="/transparent-logo.png"
-          alt="OpenSEO"
+          src="/serpwisp-logo.svg"
+          alt="SerpWisp"
           className="mx-auto size-10 rounded-lg"
         />
         <h1 className="text-xl font-semibold">

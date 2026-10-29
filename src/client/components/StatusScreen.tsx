@@ -46,8 +46,8 @@ export function StatusScreen({
       >
         {logo ? (
           <img
-            src="/transparent-logo.png"
-            alt="OpenSEO"
+            src="/serpwisp-logo.svg"
+            alt="SerpWisp"
             className="size-10 rounded-lg"
           />
         ) : null}
