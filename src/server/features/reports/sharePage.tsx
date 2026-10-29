@@ -12,14 +12,14 @@ import { domainField } from "@/types/schemas/domain";
 // The public face of a shared report, `/s/<token>`: a slim bar and the
 // document in the same sandboxed frame the in-app viewer uses. Rendered to a
 // static string on the server rather than served as a React route, because the
-// reader is usually someone who has never opened OpenSEO: the app's root shell
+// reader is usually someone who has never opened SerpWisp: the app's root shell
 // renders only on the client, so a route inside it cost them the whole app
 // bundle (~400 KB gzipped) downloaded, parsed and hydrated before the frame
 // even existed. This page puts the frame in the first response and ships no
 // JavaScript beyond the Share button's clipboard handler. JSX so every value
 // from the row is escaped by React, not by hand.
 
-const MARKETING_URL = "https://openseo.so/?utm_source=shared_report";
+const MARKETING_URL = "https://serpwisp.com/?utm_source=shared_report";
 
 const MAX_DESCRIPTION_CHARS = 200;
 

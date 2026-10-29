@@ -86,7 +86,7 @@ function AuthConfigErrorCard({ message, onRetry }: CardProps) {
         ) : null}
         {clientAuthMode === "everyapp" ? (
           <p className="text-muted-foreground">
-            OpenSEO runs behind an Every App gateway, which signs people in.
+            SerpWisp runs behind an Every App gateway, which signs people in.
             Install it with <code className="mx-1">pnpm everyapp install</code>{" "}
             so it gets the gateway&apos;s identity keys, and open it through the
             gateway.

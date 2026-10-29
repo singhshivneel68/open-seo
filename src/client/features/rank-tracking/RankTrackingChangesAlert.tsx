@@ -13,7 +13,7 @@ export function RankTrackingChangesAlert() {
           Since September, Google has been serving incomplete results to all
           rank trackers.{" "}
           <a
-            href="https://openseo.so/blogs/rank-tracking-changes"
+            href="https://serpwisp.com/blogs/rank-tracking-changes"
             target="_blank"
             rel="noopener noreferrer"
             className="font-medium underline underline-offset-4"

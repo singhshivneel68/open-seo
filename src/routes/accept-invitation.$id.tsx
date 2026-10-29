@@ -45,7 +45,7 @@ function SignedOutInvitationCard({ invitationId }: { invitationId: string }) {
   return (
     <AuthPageCard title="You&rsquo;re invited">
       <p className="text-sm text-muted-foreground">
-        You&rsquo;ve been invited to join an organization on OpenSEO. Sign in
+        You&rsquo;ve been invited to join an organization on SerpWisp. Sign in
         with the email address that received the invitation, or create an
         account with it, to accept.
       </p>
@@ -235,7 +235,7 @@ function InvitationCard({
         <span className="font-medium">
           {invitationQuery.data.organizationName}
         </span>{" "}
-        on OpenSEO.
+        on SerpWisp.
       </p>
       {actionError ? (
         <Alert variant="destructive">

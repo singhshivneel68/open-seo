@@ -6,7 +6,7 @@ const DEAD_GRANT_REASONS = new Set([
   "refresh_token_mismatch",
 ]);
 const REAUTHORIZE_DESCRIPTION =
-  "Your OpenSEO sign-in has expired or was revoked. Reconnect OpenSEO in your agent and approve the sign-in again: https://openseo.so/docs/agent-setup";
+  "Your SerpWisp sign-in has expired or was revoked. Reconnect SerpWisp in your agent and approve the sign-in again: https://serpwisp.com/docs/agent-setup";
 
 export function handleOAuthError(error: {
   code: string;

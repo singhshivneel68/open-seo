@@ -80,7 +80,7 @@ async function checkKeyFile(host: string, key: string): Promise<KeyFileStatus> {
   let response: Response;
   try {
     response = await fetch(await normalizeAndValidateStartUrl(url), {
-      headers: { "user-agent": "OpenSEO-IndexNow/1.0 (+https://openseo.so)" },
+      headers: { "user-agent": "SerpWisp-IndexNow/1.0 (+https://serpwisp.com)" },
       redirect: "manual",
       signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
     });

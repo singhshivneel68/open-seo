@@ -133,11 +133,11 @@ export function ResultsView({
             to allow the{" "}
             <a
               className="underline underline-offset-4"
-              href="https://openseo.so/docs/crawler"
+              href="https://serpwisp.com/docs/crawler"
               target="_blank"
               rel="noreferrer"
             >
-              OpenSEO-Audit crawler
+              SerpWisp-Audit crawler
             </a>
             .
           </AlertDescription>

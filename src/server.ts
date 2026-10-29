@@ -145,7 +145,7 @@ function fetch(
   return withPgClient(() => Promise.resolve(handleFetch(request, env, ctx)));
 }
 
-// AUTH_MODE=everyapp: OpenSEO is private behind an Every App gateway, which
+// AUTH_MODE=everyapp: SerpWisp is private behind an Every App gateway, which
 // signs the person's identity onto every request it forwards. Fail closed on
 // anything else before routing, then resolve users per request as the other
 // modes do. Gateway calls made while serving the request forward its

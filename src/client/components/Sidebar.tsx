@@ -211,7 +211,7 @@ export function Sidebar({
 
 // Behind an Every App gateway, which owns sign-in, organizations, teams and
 // billing: the sidebar's first row links back to the gateway, and the footer
-// holds help and OpenSEO settings.
+// holds help and SerpWisp settings.
 const everyApp = isEveryAppClientAuthMode();
 
 /**

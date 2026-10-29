@@ -22,7 +22,7 @@ export function StatusScreen({
   footer,
   size = "md",
 }: {
-  /** Show the OpenSEO logo, for screens outside the app shell. */
+  /** Show the SerpWisp logo, for screens outside the app shell. */
   logo?: boolean;
   title?: ReactNode;
   description?: ReactNode;

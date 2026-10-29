@@ -71,7 +71,7 @@ export const listSearchConsoleSitesTool = {
   config: {
     title: "List Search Console sites",
     description:
-      "Lists the Search Console properties visible to each Google account the calling user has connected in the OpenSEO dashboard, and flags the one bound to the project. Use it to find the siteUrl (e.g. sc-domain:example.com or https://www.example.com/) and accountId to pass to set_search_console_site. Cannot connect a new Google account; that happens on the project's Integrations page. Uses no credits. Read-only.",
+      "Lists the Search Console properties visible to each Google account the calling user has connected in the SerpWisp dashboard, and flags the one bound to the project. Use it to find the siteUrl (e.g. sc-domain:example.com or https://www.example.com/) and accountId to pass to set_search_console_site. Cannot connect a new Google account; that happens on the project's Integrations page. Uses no credits. Read-only.",
     inputSchema: { projectId: projectIdSchema } as const,
     outputSchema: z.looseObject({
       ok: z.boolean(),
@@ -111,7 +111,7 @@ export const listSearchConsoleSitesTool = {
     }));
     const text =
       accounts.length === 0
-        ? "No Google account with Search Console access is connected to this OpenSEO user. Connect one on the project's Integrations page in the dashboard."
+        ? "No Google account with Search Console access is connected to this SerpWisp user. Connect one on the project's Integrations page in the dashboard."
         : accounts
             .map((grant) =>
               [
@@ -154,7 +154,7 @@ export const setSearchConsoleSiteTool = {
   config: {
     title: "Set project Search Console site",
     description:
-      "Binds a project to a verified Search Console property through a Google account the user already connected in the OpenSEO dashboard (gscAccountId from list_search_console_sites). The property must be visible to that account with verified access. Replaces the project's previous binding. Uses no credits. Requires permission to manage integrations.",
+      "Binds a project to a verified Search Console property through a Google account the user already connected in the SerpWisp dashboard (gscAccountId from list_search_console_sites). The property must be visible to that account with verified access. Replaces the project's previous binding. Uses no credits. Requires permission to manage integrations.",
     inputSchema: setSiteInputSchema,
     outputSchema: z.looseObject({
       ok: z.boolean(),
@@ -208,7 +208,7 @@ export const listGoogleAnalyticsPropertiesTool = {
   config: {
     title: "List Google Analytics properties",
     description:
-      "Lists the GA4 properties visible to each Google account the calling user has connected in the OpenSEO dashboard, and flags the one bound to the project. Use it to find the propertyId and accountId to pass to set_google_analytics_property. Cannot connect a new Google account; that happens on the project's Integrations page. Uses no credits. Read-only.",
+      "Lists the GA4 properties visible to each Google account the calling user has connected in the SerpWisp dashboard, and flags the one bound to the project. Use it to find the propertyId and accountId to pass to set_google_analytics_property. Cannot connect a new Google account; that happens on the project's Integrations page. Uses no credits. Read-only.",
     inputSchema: { projectId: projectIdSchema } as const,
     outputSchema: z.looseObject({
       ok: z.boolean(),
@@ -245,7 +245,7 @@ export const listGoogleAnalyticsPropertiesTool = {
     }));
     const text =
       accounts.length === 0
-        ? "No Google account with Google Analytics access is connected to this OpenSEO user. Connect one on the project's Integrations page in the dashboard."
+        ? "No Google account with Google Analytics access is connected to this SerpWisp user. Connect one on the project's Integrations page in the dashboard."
         : accounts
             .map((grant) =>
               [
@@ -288,7 +288,7 @@ export const setGoogleAnalyticsPropertyTool = {
   config: {
     title: "Set project Google Analytics property",
     description:
-      "Binds a project to a GA4 property through a Google account the user already connected in the OpenSEO dashboard (ga4AccountId from list_google_analytics_properties). The property must be visible to that account. Replaces the project's previous binding. Uses no credits. Requires permission to manage integrations.",
+      "Binds a project to a GA4 property through a Google account the user already connected in the SerpWisp dashboard (ga4AccountId from list_google_analytics_properties). The property must be visible to that account. Replaces the project's previous binding. Uses no credits. Requires permission to manage integrations.",
     inputSchema: setPropertyInputSchema,
     outputSchema: z.looseObject({
       ok: z.boolean(),

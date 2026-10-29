@@ -144,7 +144,7 @@ export function CrawlerAccessForm({
           {(field) => (
             <field.TextField
               label="Signature"
-              description="Shopify also shows a Signature-Agent value. You don't need to paste it: OpenSEO sends it with every request."
+              description="Shopify also shows a Signature-Agent value. You don't need to paste it: SerpWisp sends it with every request."
               type="password"
               autoComplete="off"
               data-ph-mask

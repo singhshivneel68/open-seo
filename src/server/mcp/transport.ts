@@ -102,7 +102,7 @@ async function handleLegacyJsonRequest(
   // buffers the response and lets the finally below tear everything down
   // before the request completes. JSON mode silently drops server-to-client
   // requests (sampling/elicitation) and would hang the buffered response —
-  // no OpenSEO tool issues them.
+  // no SerpWisp tool issues them.
   const server = createOpenSeoMcpServer(props, supportsApps);
   const transport = new WebStandardStreamableHTTPServerTransport({
     sessionIdGenerator: undefined,

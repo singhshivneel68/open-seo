@@ -16,16 +16,16 @@ import { getWorkersEnv } from "@/server/lib/runtime-env";
  * owner or admin makes once (the Connect button here, or Every App → Manage
  * workspace → Providers → Connect for the organization). Everyone in the
  * workspace reads Search Console and Analytics through it, as they share
- * one OpenSEO workspace. Calls go through `integrationFetch`, which puts the
- * organization's token on them; OpenSEO never sees a Google token, client
+ * one SerpWisp workspace. Calls go through `integrationFetch`, which puts the
+ * organization's token on them; SerpWisp never sees a Google token, client
  * or secret (docs/design/2026-10-oauth-providers.md in the Every App repo).
  *
  * The capability is `google-workspace` with the scope sets `identity`,
  * `search-console.read` and `analytics.read` (everyapp.config.ts). A
  * project's connection rows keep `connectedByUserId` as the member who
  * picked the property, and the sentinel
- * {@link GATEWAY_GOOGLE_ACCOUNT_ID} where OpenSEO's own mode keeps the
- * Google account id: the gateway, not OpenSEO, knows which Google account
+ * {@link GATEWAY_GOOGLE_ACCOUNT_ID} where SerpWisp's own mode keeps the
+ * Google account id: the gateway, not SerpWisp, knows which Google account
  * was connected.
  */
 export const GATEWAY_GOOGLE_PROVIDER = "google-workspace";
@@ -36,7 +36,7 @@ export const GATEWAY_GOOGLE_ACCOUNT_ID = "everyapp";
 type GatewayGoogleStatus = {
   /** The app lists `google-workspace` and the gateway holds a Google client. */
   available: boolean;
-  /** The member behind the served request has a connection with every set OpenSEO declares. */
+  /** The member behind the served request has a connection with every set SerpWisp declares. */
   connected: boolean;
   /** A connection exists but has expired or lacks a set: connect again. */
   reconnect: boolean;
@@ -103,7 +103,7 @@ export async function getGatewayGoogleFetch(): Promise<typeof fetch | null> {
 /**
  * Where a Connect button sends an owner or admin: the gateway's page that
  * connects Google for the organization, which comes back to `returnTo` (the
- * OpenSEO page they were on) once Google has answered.
+ * SerpWisp page they were on) once Google has answered.
  */
 export async function getGatewayGoogleConnectUrl(
   returnTo: string,

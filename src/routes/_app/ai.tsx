@@ -28,9 +28,9 @@ import {
 import { CopyButton } from "@/client/components/CopyButton";
 import { AgentList } from "@/client/features/ai-mcp/AgentList";
 
-const DOCS_URL = "https://openseo.so/docs/agent-setup";
+const DOCS_URL = "https://serpwisp.com/docs/agent-setup";
 
-const COACH_DOCS_URL = "https://openseo.so/docs/skills/seo-coach";
+const COACH_DOCS_URL = "https://serpwisp.com/docs/skills/seo-coach";
 const LINK_CLASS =
   "text-foreground underline decoration-foreground/25 underline-offset-4 hover:decoration-foreground";
 const MUTED_LINK_CLASS =
@@ -89,7 +89,7 @@ function AiPage() {
       <div className="mx-auto max-w-7xl">
         <PageHeader
           title="Agent setup"
-          description="The most powerful way to use OpenSEO is through the AI agent you already use. Set it up once, then ask it anything."
+          description="The most powerful way to use SerpWisp is through the AI agent you already use. Set it up once, then ask it anything."
         />
 
         <Tabs
@@ -119,7 +119,7 @@ function AiPage() {
                       </CardTitle>
                       <CardDescription>
                         Paste the setup prompt into your agent to connect
-                        OpenSEO and install its SEO skills. It will guide you
+                        SerpWisp and install its SEO skills. It will guide you
                         through any manual steps.
                       </CardDescription>
                     </CardHeader>
@@ -170,7 +170,7 @@ function AiPage() {
                       </CardTitle>
                       <CardDescription>
                         Already connected? Paste the update prompt into your
-                        agent to get the latest OpenSEO skills while preserving
+                        agent to get the latest SerpWisp skills while preserving
                         your connection settings and personal edits.
                       </CardDescription>
                     </CardHeader>
@@ -206,7 +206,7 @@ function AiPage() {
                       cannot connect until Managed OAuth is enabled on your
                       Access application.{" "}
                       <a
-                        href="https://openseo.so/docs/self-hosting/cloudflare#connect-the-mcp-server-through-cloudflare-access"
+                        href="https://serpwisp.com/docs/self-hosting/cloudflare#connect-the-mcp-server-through-cloudflare-access"
                         target="_blank"
                         rel="noreferrer"
                         className="font-medium"
@@ -249,7 +249,7 @@ function AiPage() {
                     className="flex flex-col gap-0.5 sm:flex-row sm:gap-3"
                   >
                     <a
-                      href={`https://openseo.so/docs/skills/${name}`}
+                      href={`https://serpwisp.com/docs/skills/${name}`}
                       target="_blank"
                       rel="noreferrer"
                       className={`shrink-0 font-mono text-[13px] sm:w-48 ${LINK_CLASS}`}
@@ -272,7 +272,7 @@ const EVERY_APP_SKILLS_COMMAND = "npx skills add every-app/open-seo";
 
 /**
  * Behind Every App the agent connects to the gateway's MCP address, which
- * covers every app on it; OpenSEO serves no MCP of its own here. The skills
+ * covers every app on it; SerpWisp serves no MCP of its own here. The skills
  * install on their own.
  */
 function EveryAppAgentSetup() {
@@ -285,7 +285,7 @@ function EveryAppAgentSetup() {
             <h2>Connect your agent to Every App</h2>
           </CardTitle>
           <CardDescription>
-            Every App has one address for your agent, and it covers OpenSEO and
+            Every App has one address for your agent, and it covers SerpWisp and
             your other apps. Connect it once.
           </CardDescription>
         </CardHeader>
@@ -306,8 +306,8 @@ function EveryAppAgentSetup() {
             <h2>Install the SEO skills</h2>
           </CardTitle>
           <CardDescription>
-            Run this in a terminal to add OpenSEO's skills to your agent. They
-            use OpenSEO through your Every App connection.
+            Run this in a terminal to add SerpWisp's skills to your agent. They
+            use SerpWisp through your Every App connection.
           </CardDescription>
         </CardHeader>
         <CardContent className="flex flex-wrap items-center gap-x-5 gap-y-3">

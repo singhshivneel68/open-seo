@@ -209,8 +209,8 @@ function SubscribePage() {
           {isUpgradeFlow
             ? "Upgrade your plan"
             : firstName
-              ? `Welcome to OpenSEO, ${firstName}!`
-              : "Welcome to OpenSEO!"}
+              ? `Welcome to SerpWisp, ${firstName}!`
+              : "Welcome to SerpWisp!"}
         </h1>
         <p className="text-sm text-muted-foreground">
           SEO on your terms. All your SEO tools in one place at a fair price.
@@ -225,7 +225,7 @@ function SubscribePage() {
           <li className="-mt-1 pl-6 text-xs">
             <a
               className="text-muted-foreground underline decoration-muted-foreground/40 decoration-dotted underline-offset-4 transition-colors hover:text-foreground"
-              href="https://openseo.so/pricing"
+              href="https://serpwisp.com/pricing"
               target="_blank"
               rel="noreferrer"
               onClick={() =>

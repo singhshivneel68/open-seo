@@ -31,7 +31,7 @@ export const Route = createFileRoute("/_authenticated/oauth-consent")({
 const SCOPES = [
   {
     icon: Database,
-    label: "Read your OpenSEO data",
+    label: "Read your SerpWisp data",
     description: "Projects, keyword reports, and audit results.",
   },
   {
@@ -108,7 +108,7 @@ function OAuthConsentPage() {
         setError("Authorization response did not include a redirect URL.");
       }
     } catch {
-      setError("We couldn't reach OpenSEO. Please try again.");
+      setError("We couldn't reach SerpWisp. Please try again.");
     }
     setPendingAction(null);
   }
@@ -125,7 +125,7 @@ function OAuthConsentPage() {
           <h1>Authorize MCP access</h1>
         </CardTitle>
         <p className="mt-2 text-sm text-muted-foreground">
-          An MCP client is requesting access to your OpenSEO workspace.
+          An MCP client is requesting access to your SerpWisp workspace.
         </p>
       </CardHeader>
       <CardContent>
